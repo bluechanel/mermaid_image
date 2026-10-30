@@ -1,0 +1,30 @@
+@import "tailwindcss";
+
+/* 品牌色：International Klein Blue + 暖奶油底 + 赭红 / 沙色点缀 */
+@theme {
+  --color-ikb: #002fa7;
+  --color-terracotta: #c5603a;
+  --color-sand: #d4b896;
+  --color-cream: #f5f1e8;
+  --color-paper: #e8e2d5;
+  --color-ink: #1a1a1a;
+  --color-mute: #8a8578;
+}
+
+@theme inline {
+  --font-heading: var(--font-poppins), "PingFang SC", "Microsoft YaHei", Arial, system-ui, sans-serif;
+  --font-body: var(--font-lora), "Songti SC", "Noto Serif SC", Georgia, "Times New Roman", serif;
+  --font-mono: var(--font-jetbrains), ui-monospace, Menlo, Consolas, monospace;
+}
+
+body {
+  font-family: var(--font-heading);
+}
+
+::selection {
+  background: rgb(0 47 167 / 0.18);
+}
+
+.mermaid-preview svg {
+  max-width: none !important;
+}
